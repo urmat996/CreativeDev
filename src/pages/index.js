@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Text, Icon, Box } from "@quarkly/widgets";
+import { Theme, Image, Text, Icon, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Menu, Section, StackItem, Stack, SocialMedia } from "@quarkly/components";
 import { MdArrowDownward } from "react-icons/md";
@@ -13,10 +13,18 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section>
-			<Text margin="0px 0 24px 0" text-align="center" font="--headline2" md-font="--headline3">
-				CREATIVE DEVELOPMENT
-			</Text>
+		<Section quarkly-title="Secteion">
+			<Image
+				width="213.59998779296876px"
+				height="40.799993896484374px"
+				src="https://uploads.quarkly.io/5f9a9825021c7d001f69b460/images/dev.svg?v=2020-10-29T11:03:12.214Z"
+				display="inline-block"
+				position="absolute"
+				bottom="2331.6000061035156px"
+				left="61px"
+				right="1005.4000122070313px"
+				top="30px"
+			/>
 			<Menu
 				display="flex"
 				justify-content="center"
@@ -174,5 +182,6 @@ export default (() => {
 				/>
 			</SocialMedia>
 		</Section>
+		<Image width="64px" height="64px" />
 	</Theme>;
 });
