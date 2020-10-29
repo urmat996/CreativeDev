@@ -14,7 +14,7 @@ export default (() => {
 		</Helmet>
 		<Section>
 			<Text margin="0px 0 24px 0" text-align="center" font="--headline2" md-font="--headline3">
-				Awesome Company
+				CREATIVE DEVELOPMENT
 			</Text>
 			<Menu
 				display="flex"
