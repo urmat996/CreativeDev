@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Image, Text, Icon, Box, Link, Input, Button } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, Icon, Box, Input, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Menu, Section, StackItem, Stack, SocialMedia, GoogleMap, Formspree } from "@quarkly/components";
 import { MdArrowDownward, MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
@@ -53,7 +53,7 @@ export default (() => {
 						Excellence in everything
 					</Text>
 					<Text as="h1" font="--headline1" md-font="--headline2" margin="10px 0">
-						Striving for perfection in everything we do. Unparalleled service for everyone.
+						Просто пока проверка связи
 					</Text>
 				</StackItem>
 			</Stack>
@@ -358,5 +358,27 @@ export default (() => {
 				Stack item
 			</Text>
 		</StackItem>
+		<Link
+			font={"--capture"}
+			font-size={"10px"}
+			position={"fixed"}
+			bottom={"12px"}
+			right={"12px"}
+			z-index={"4"}
+			border-radius={"4px"}
+			padding={"5px 12px 4px"}
+			background-color={"--dark"}
+			opacity={"0.6"}
+			hover-opacity={"1"}
+			color={"--light"}
+			cursor={"pointer"}
+			transition={"--opacityOut"}
+			quarkly-title={"Badge"}
+			text-decoration-line={"initial"}
+			href={"https://quarkly.io/"}
+			target={"_blank"}
+		>
+			Made on Quarkly
+		</Link>
 	</Theme>;
 });
